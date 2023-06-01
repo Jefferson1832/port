@@ -28,16 +28,22 @@
     <h2>Contact</h2>
   </div>
   <div class="columns features">
-    <form  id="contact-form" action="https://formsubmit.co/ads.jeffersonsantos@gmail.com/" method="POST">
-      <textarea id="message" maxlength="10000" name="message" placeholder="Wazup ?"></textarea>
-      <div class="crayonico"></div>
-      <input class="text-input" id="senderEmail" maxlength="50" name="email" placeholder="E-mail" type="email">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="email.html">
-      <div class="emailico"></div>
+    <!-- <form id="contact-form" action="https://formsubmit.co/ads.jeffersonsantos@gmail.com/" method="POST">
+      <textarea  required maxlength="10000" name="message" placeholder="Wazup ?"></textarea>
+      
+      <input class="text-input" id="senderEmail" maxlength="50" name="email" required placeholder="E-mail" type="email">
+      
       <input class="btn btn-input" id="sendMessage" name="sendMessage" type="submit" value="IM DONE">
-    </form>
+    </form> -->
+
+    <form id="contact-form" action="https://formsubmit.co/ads.jeffersonsantos@gmail.com" method="POST">
+      <input class="text-input" id="senderEmail" name="email" required placeholder="E-mail" type="email" >
+      <div class="emailico"></div>
+      <input class="text-input" max="10000" name="message" placeholder="Wazup ?" type="text" name="name" required><div class="crayonico"></div>
+      <input class="btn btn-input" id="sendMessage" name="sendMessage" type="submit" value="IM DONE">
+ </form>
   </div>
+  
 </section>
 <footer>
   <div class="copyright"><small>Copyright. All Rights Reserved.</small></div>
